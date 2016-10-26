@@ -1,0 +1,1 @@
+<?phpheader("location: ../../error.php");?>

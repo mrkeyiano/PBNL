@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+ErrorDocument 400 http://www.wapdebby.tk/error.php
+ErrorDocument 401 http://www.wapdebby.tk/error.php
+ErrorDocument 403 http://www.wapdebby.tk/error.php
+ErrorDocument 404 http://www.wapdebby.tk/error.php
+ErrorDocument 500 http://www.wapdebby.tk/error.php
